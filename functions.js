@@ -47,17 +47,36 @@ function makeCrazyLongString(string){
 Function - youGetTaco
 Write a function that takes a single String parameter called action. If the value passed into our function is eat have the function return the String value EAT TACOS.
 */
-
+function youGetTaco(action){
+  if (action==="eat"){
+    return "Eat Taco";
+  }
+}
+var num1 = youGetTaco("drink");
+console.log(num1)
 
 
 /*Function - isNumberGreaterThan
 Write a function that takes two parameters of type Number called first and second respectively. Return true if the first number is greater than the second.*/
 
-
+function isNumberGreaterThan(first, second){
+  if (first > second){
+    return true;
+  }else{
+    return false;
+  }
+}
+var num2 = isNumberGreaterThan(2,1);
+console.log(num2);
 
 /*Function - isTrue
 Write a function that takes in a Boolean value named val and have the function return whether the value is true.*/
 
+function isTrue(val){
+  return val
+}
+var num3 = isTrue(true);
+console.log(num3);
 
 
 
