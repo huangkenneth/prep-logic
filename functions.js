@@ -52,18 +52,18 @@ function youGetTaco(action){
     return "Eat Taco";
   }
 }
-var num1 = youGetTaco("drink");
+var num1 = youGetTaco("eat");
 console.log(num1)
 
 // step1 define the function
 // step2  invoke and store
 // step3 test your code
 
-function actionTaco(action){
-  return action + " tacos";
-}
-var consumeTaco  = actionTaco("drink")
-console.log(consumeTaco);
+// function actionTaco(action){
+//   return action + " tacos";
+// }
+// var consumeTaco  = actionTaco("drink")
+// console.log(consumeTaco);
 
 // if then statement are mainly used for comparisons
 
@@ -82,21 +82,28 @@ console.log(num2);
 /*Function - isTrue
 Write a function that takes in a Boolean value named val and have the function return whether the value is true.*/
 
+// function isTrue(val){
+//   return val
+// }
+// var num3 = isTrue(true);
+// console.log(num3);
+
 function isTrue(val){
   return val
 }
-var num3 = isTrue(true);
+var num3 = isTrue(1>2);
 console.log(num3);
 
+// boolean values are true/false statements so boolean values will only be true or false
 
 
 /*Function - isFalse
 Write a function that takes in a Boolean value named val and have the function return whether the value is false.*/
 
 function isFalse(val){
-  return val;
+  return !val;
 }
-var num4 = isFalse(false);
+var num4 = isFalse(true);
 console.log(num4);
 
 /*Function - isEqual
@@ -129,7 +136,7 @@ console.log(num6);
 Write a function that takes two variables of type Boolean called first and second respectively. Return true if both values are true otherwise return false.*/
 
 function doubleEquals(first, second){
-  if (first === second){
+  if (first && second){
     return true;
   }
     return false;
@@ -137,9 +144,19 @@ function doubleEquals(first, second){
 var num7 = doubleEquals(1,1);
 console.log(num7);
 
+// === is used to compare two things; && is used to compare validity
+
 /*Function - totalOver30
 Write a function that takes three variables of type Number called first and second and third respectively. Return true if the sum of all values are greater than 30 otherwise return false.*/
 
+function totalOver30(first, second, third){
+  if (first+second+third === 30){
+    return true;
+  }
+  return false;
+}
+var num8 = totalOver30(1,2,3);
+console.log(num8);
 
 
 /*Function - totalUnderWhat
