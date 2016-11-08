@@ -55,6 +55,17 @@ function youGetTaco(action){
 var num1 = youGetTaco("drink");
 console.log(num1)
 
+// step1 define the function
+// step2  invoke and store
+// step3 test your code
+
+function actionTaco(action){
+  return action + " tacos";
+}
+var consumeTaco  = actionTaco("drink")
+console.log(consumeTaco);
+
+// if then statement are mainly used for comparisons
 
 /*Function - isNumberGreaterThan
 Write a function that takes two parameters of type Number called first and second respectively. Return true if the first number is greater than the second.*/
@@ -62,9 +73,8 @@ Write a function that takes two parameters of type Number called first and secon
 function isNumberGreaterThan(first, second){
   if (first > second){
     return true;
-  }else{
-    return false;
   }
+  return false;
 }
 var num2 = isNumberGreaterThan(2,1);
 console.log(num2);
@@ -83,21 +93,49 @@ console.log(num3);
 /*Function - isFalse
 Write a function that takes in a Boolean value named val and have the function return whether the value is false.*/
 
-
-
+function isFalse(val){
+  return val;
+}
+var num4 = isFalse(false);
+console.log(num4);
 
 /*Function - isEqual
 Write a function that takes two variables of type String called firstWord and secondWord respectively. Return 'AWWWWRIGHT' if the two are equal otherwise return 'Y U NO MATCH!'.*/
 
+function isEqual(firstWord, secondWord){
+  if (firstWord === secondWord){
+    return "AWWWWRIGHT";
+  }else{
+    return "Y U KNOW MATCH";
+  }
+}
+var num5 = isEqual("hi", "hi")
+console.log(num5);
 
 /*Function - isNotEqual
 Write a function that takes two variables of type String called firstWord and secondWord respectively. Return 'AWWWWRIGHT' if the two are not equal otherwise return 'Y U MATCH!'.*/
 
+function isNotEqual(firstWord, secondWord){
+  if (firstWord !== secondWord){
+    return "Y U KNOW MATCH";
+  }else{
+    return "AWWWWRIGHT";
+  }
+}
+var num6 = isNotEqual("hi", "bye");
+console.log(num6);
 
 /*Function - doubleEquals
 Write a function that takes two variables of type Boolean called first and second respectively. Return true if both values are true otherwise return false.*/
 
-
+function doubleEquals(first, second){
+  if (first === second){
+    return true;
+  }
+    return false;
+}
+var num7 = doubleEquals(1,1);
+console.log(num7);
 
 /*Function - totalOver30
 Write a function that takes three variables of type Number called first and second and third respectively. Return true if the sum of all values are greater than 30 otherwise return false.*/
