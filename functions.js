@@ -47,13 +47,13 @@ function makeCrazyLongString(string){
 Function - youGetTaco
 Write a function that takes a single String parameter called action. If the value passed into our function is eat have the function return the String value EAT TACOS.
 */
-function youGetTaco(action){
-  if (action==="eat"){
-    return "Eat Taco";
-  }
-}
-var num1 = youGetTaco("eat");
-console.log(num1)
+// function youGetTaco(action){
+//   if (action==="eat"){
+//     return "Eat Taco";
+//   }
+// }
+// var num1 = youGetTaco("eat");
+// console.log(num1);
 
 // step1 define the function
 // step2  invoke and store
@@ -70,14 +70,14 @@ console.log(num1)
 /*Function - isNumberGreaterThan
 Write a function that takes two parameters of type Number called first and second respectively. Return true if the first number is greater than the second.*/
 
-function isNumberGreaterThan(first, second){
-  if (first > second){
-    return true;
-  }
-  return false;
-}
-var num2 = isNumberGreaterThan(2,1);
-console.log(num2);
+// function isNumberGreaterThan(first, second){
+//   if (first > second){
+//     return true;
+//   }
+//   return false;
+// }
+// var num2 = isNumberGreaterThan(2,1);
+// console.log(num2);
 
 /*Function - isTrue
 Write a function that takes in a Boolean value named val and have the function return whether the value is true.*/
@@ -88,11 +88,11 @@ Write a function that takes in a Boolean value named val and have the function r
 // var num3 = isTrue(true);
 // console.log(num3);
 
-function isTrue(val){
-  return val
-}
-var num3 = isTrue(1>2);
-console.log(num3);
+// function isTrue(val){
+//   return val;
+// }
+// var num3 = isTrue(1>2);
+// console.log(num3);
 
 // boolean values are true/false statements so boolean values will only be true or false
 
@@ -100,84 +100,108 @@ console.log(num3);
 /*Function - isFalse
 Write a function that takes in a Boolean value named val and have the function return whether the value is false.*/
 
-function isFalse(val){
-  return !val;
-}
-var num4 = isFalse(true);
-console.log(num4);
+// function isFalse(val){
+//   return !val;
+// }
+// var num4 = isFalse(true);
+// console.log(num4);
 
 /*Function - isEqual
 Write a function that takes two variables of type String called firstWord and secondWord respectively. Return 'AWWWWRIGHT' if the two are equal otherwise return 'Y U NO MATCH!'.*/
 
-function isEqual(firstWord, secondWord){
-  if (firstWord === secondWord){
-    return "AWWWWRIGHT";
-  }else{
-    return "Y U KNOW MATCH";
-  }
-}
-var num5 = isEqual("hi", "hi")
-console.log(num5);
+// function isEqual(firstWord, secondWord){
+//   if (firstWord === secondWord){
+//     return "AWWWWRIGHT";
+//   }else{
+//     return "Y U KNOW MATCH";
+//   }
+// }
+// var num5 = isEqual("hi", "hi");
+// console.log(num5);
 
 /*Function - isNotEqual
 Write a function that takes two variables of type String called firstWord and secondWord respectively. Return 'AWWWWRIGHT' if the two are not equal otherwise return 'Y U MATCH!'.*/
 
-function isNotEqual(firstWord, secondWord){
-  if (firstWord !== secondWord){
-    return "Y U KNOW MATCH";
-  }else{
-    return "AWWWWRIGHT";
-  }
-}
-var num6 = isNotEqual("hi", "bye");
-console.log(num6);
+// function isNotEqual(firstWord, secondWord){
+//   if (firstWord !== secondWord){
+//     return "Y U KNOW MATCH";
+//   }else{
+//     return "AWWWWRIGHT";
+//   }
+// }
+// var num6 = isNotEqual("hi", "bye");
+// console.log(num6);
 
 /*Function - doubleEquals
 Write a function that takes two variables of type Boolean called first and second respectively. Return true if both values are true otherwise return false.*/
 
-function doubleEquals(first, second){
-  if (first && second){
-    return true;
-  }
-    return false;
-}
-var num7 = doubleEquals(1,1);
-console.log(num7);
+// function doubleEquals(first, second){
+//   if (first && second){
+//     return true;
+//   }
+//     return false;
+// }
+// var num7 = doubleEquals(1,1);
+// console.log(num7);
 
 // === is used to compare two things; && is used to compare validity
 
 /*Function - totalOver30
 Write a function that takes three variables of type Number called first and second and third respectively. Return true if the sum of all values are greater than 30 otherwise return false.*/
 
-function totalOver30(first, second, third){
-  if (first+second+third === 30){
-    return true;
-  }
-  return false;
-}
-var num8 = totalOver30(1,2,3);
-console.log(num8);
+// function totalOver30(first, second, third){
+//   if (first+second+third === 30){
+//     return true;
+//   }
+//   return false;
+// }
+// var num8 = totalOver30(1,2,3);
+// console.log(num8);
 
 
 /*Function - totalUnderWhat
 Write a function that takes four variables of type Number called first and second and third and fourth respectively. Return true if the sum of first, second and third are less than fourth otherwise return false.*/
 
-
+function totalUnderWhat(first, second, third, fourth){
+  if ((first+second+third)<fourth){
+    return true;
+  }
+  return false;
+}
+var num9 = totalUnderWhat(2,3,5,81);
+console.log(num9);
 
 /*Function - looptoNumber
 Write a function that takes in a Number value named limit and have the function write a for loop that loops the number of times of limit and console.log each number as the loop executes.*/
 
+function looptoNumber(limit){
+  for(i=0; i<limit; i++){
+    console.log(i);
+  }
+}
+looptoNumber(3);
 
 
 /*Function - showEachValue
 Write a function that takes in a Array value named characters that has a sequence of single character String values and have the function write a for loop that loops for each number of elements in the Array and console.log each character as the loop executes.*/
 
+function showEachValue(characters){
+  for(i=0; i<characters.length; i++){
+    console.log(i);
+  }
+}
+showEachValue("yesterday", "today", "tomorrow");
 
 
 /*Function - createArrayFromString
 Write a function that takes a single variable of type String called word and write a for loop that creates an Array made up of each character in word except for "A" or "a". We don't want no stinking "A" or "a" in our Array. Note: You will need to use the Array.push() method to complete this function.*/
 
-
+function createArrayFromString(word){
+  for (i=0; i<=word.length; i++){
+    console.log(i);
+  }
+}
+createArrayFromString("devleague");
 
 /*Function - greatSummator
 Write a function that takes an Array with any number of type Number and write a for loop to add all numbers in the Array and return the sum.*/
